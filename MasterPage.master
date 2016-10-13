@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .TitleDiv{ width:90%; background-color:Black; color:White; height:50px; padding:5px; position:fixed; top:0px; margin-bottom:10px; z-index:1;}
+    .FootDiv{background-color:lavender; width:90%; padding:10px;}
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<div style="width:100%; margin:auto;">
+    <div class="TitleDiv">Assignment 1 – Server Side Scripting</div>
+    <
+    <form id="form1" runat="server">
+    
+    <div> 
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <div style="FootDiv">
+    <h5 style="text-align:center;">COMP 2084  Assignment 1 (Rich Freeman – Georgian College)</h5>
+</div>
+</div>
+</body>
+</html>
